@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <style>
+        /* === ESTILO GENERAL === */
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f3f4f6; /* gris claro moderno */
+            font-family: "Inter", Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 40px;
+            color: #333;
+        }
+
+        /* === FORMULARIO === */
+        form {
+            background: #ffffff;
+            padding: 30px 40px;
+            width: 360px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #1f2937; /* gris oscuro moderno */
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 18px;
+            border: 2px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: 0.2s ease;
+        }
+
+        input:focus, select:focus {
+            border-color: #2563eb; /* azul moderno */
+            box-shadow: 0 0 6px rgba(37,99,235,0.4);
+            outline: none;
+        }
+
+        /* === RADIO & CHECKBOX === */
+        .group-inline label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .group-inline input {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        /* === BOTÓN === */
+        input[type="submit"] {
+            background: #2563eb; /* azul vibrante */
+            border: none;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s ease-in-out;
+        }
+
+        input[type="submit"]:hover {
+            background: #1d4ed8;
+        }
+
+        /* === ENLACES === */
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            margin-right: 10px;
+            padding: 8px 12px;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 6px;
+            transition: 0.2s;
+        }
+
+        a:hover {
+            background: #e0e7ff;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<form>
+
+    <label>Nombre:</label>
+    <input type="text" name="nombre" required>
+
+    <label>Apellido:</label>
+    <input name="apellido" type="text" placeholder="Escribe un apellido...">
+
+    <label>Contraseña:</label>
+    <input name="password" type="password">
+
+    <label>Color favorito:</label>
+    <input name="color" type="color">
+
+    <label>Género:</label>
+    <div class="group-inline">
+        <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+        <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+        <label><input type="radio" name="genero" value="otro"> Otro</label>
+    </div>
+
+    <div class="group-inline">
+        <label><input type="radio" name="otro" value="op1"> Opción 1</label>
+        <label><input type="radio" name="otro" value="op2"> Opción 2</label>
+    </div>
+
+    <div class="group-inline">
+        <label><input type="checkbox" name="prog"> PROG</label>
+        <label><input type="checkbox" name="lmsgi"> LMSGI</label>
+        <label><input type="checkbox" name="bbdd"> BBDD</label>
+        <label><input type="checkbox" name="soste"> SOSTE</label>
+    </div>
+
+    <label>Asignatura favorita:</label>
+    <select name="asignaturaFavorita">
+        <option value="prog">PROG</option>
+        <option value="lmsgi">LMSGI</option>
+        <option value="bbdd">BBDD</option>
+        <option value="soste">SOSTE</option>
+    </select>
+
+    <input type="submit" value="Enviar">
+</form>
+
+<div style="margin-left: 20px;">
+    <a href="https://cinesembajadores.es/oviedo/" target="_blank">Ir al Cine</a>
+    <a href="https://cinesembajadores.es/oviedo/" target="_parent">Ir al Cine 2</a>
+    <a href="../horario.html">Horario</a>
+</div>
+
+</body>
+</html>
