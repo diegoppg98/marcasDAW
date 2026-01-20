@@ -1,0 +1,46 @@
+#parrafo-madre {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color:crimson;
+}
+
+p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Obtiene el último estilo*/
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#surtido {
+    width: 300px;
+    height: 200px;
+}
+
+#pastelman {
+    width: 300px;
+    height: 200px;
+}
+
+#carta-pasteles {
+    border: 2px solid orange;
+    height: 800px;
+}
+
+#fresa{
+    height: 33%;
+    width: 50vw;
+}
+
+#arcoiris{
+    height: 33%;
+    width: 50vw;
+}
+#chocolate{
+    height: 33%;
+    width: 50vw;
+}
+
+body{
+    text-align: center;
+}
