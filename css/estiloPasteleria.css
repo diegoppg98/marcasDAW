@@ -25,21 +25,38 @@ p{
 #carta-pasteles {
     border: 2px solid orange;
     height: 800px;
+    font-size: 100px;
+}
+
+#caja-surtido {
+    font-size: 2em; /*200*/
+}
+
+#surtido-carta{
+    height: 2em; /*400*/
+    width: 2em;
+}
+
+html{
+    /*rem*/
+    font-size: 30px;
 }
 
 #fresa{
-    height: 33%;
+    height: 20%;
     width: 50vw;
 }
 
 #arcoiris{
-    height: 33%;
+    height: 20%;
     width: 50vw;
 }
 #chocolate{
-    height: 33%;
+    height: 20%;
     width: 50vw;
 }
+
+
 
 body{
     text-align: center;
