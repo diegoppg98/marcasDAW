@@ -31,3 +31,15 @@ a:hover{
     font-size: 130%;
     color: crimson;
 }
+
+a:active{
+    color: green;
+}
+
+a:visited{
+    color: purple;
+}
+
+#enlace{
+    text-align: center;
+}

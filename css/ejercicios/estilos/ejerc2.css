@@ -1,0 +1,28 @@
+.rojo{
+    color: red;
+}
+
+.verde{
+    color: green;
+}
+
+.azul{
+    color: blue;
+}
+
+li.rojo{
+    font-family: fantasy;
+}
+
+li::marker{
+    color:rgb(106, 0, 255)
+}
+
+p::first-letter{
+    font-size: 200%;
+    color: magenta;
+}
+
+ol{
+    list-style-type:georgian;
+}
