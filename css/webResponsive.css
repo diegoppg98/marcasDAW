@@ -1,0 +1,33 @@
+header, footer{
+    background-color: rgb(255, 210, 217);
+    text-align: center;
+}
+
+article{
+    background-color: rgb(179, 253, 193);
+}
+
+
+nav{
+    background-color: blanchedalmond;
+}
+
+header, nav, footer, article{
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 20px;
+}
+
+#nav_movil{
+    display: none;
+}
+
+@media (max-width: 500px) {
+    #nav_ordenador{
+        display: none;
+    }
+    #nav_movil{
+        display: block;
+    }
+    
+}
