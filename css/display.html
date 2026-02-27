@@ -19,6 +19,25 @@
         .medio-bloque{
             width: 50vw;
         }
+
+        .inline{
+            display: inline;
+        }
+
+        .inline-block{
+            display: inline-block;
+        }
+
+        .oculto{
+            display: none;
+        }
+        .invisible{
+            visibility: hidden;
+        }
+
+        .flex{
+            display: flex;
+        }
     </style>
 </head>
 <body>
@@ -28,10 +47,29 @@
     <span class="caja block">Texto en bloque</span>
     <span class="caja block medio-bloque">Texto en bloque</span>
 
-    <!--Display none-->
-    <!--Display inline-->
-    
+    <!--Display none y hidden-->
+    <span class="oculto">Texto none</span>
+    <span class="invisible">Texto invisible</span>
+    <br>
 
+    <!--Display inline-->
+    <span class="caja inline">Texto inline</span>
+    <span class="caja inline medio-bloque">Texto inline</span>
+    <span class="caja inline-block medio-bloque">Texto inline-block</span>
+
+    <!--Display flex-->
+    <div class="flex">
+        <span class="caja">Texto flex</span>
+        <span class="caja">Texto flex</span>
+        <span class="caja">Texto flex</span>
+        <span class="caja">Texto flex</span>
+        <span class="caja">Texto flex</span>
+        <span class="caja">Texto flex</span>
+        <span class="caja">Texto flex</span>
+        <span class="caja">Texto flex</span>
+    </div>
+
+    <!--Display grid-->
 
 
 </body>
