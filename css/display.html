@@ -14,6 +14,7 @@
 
         .block{
             display: block;
+            background-color: lightblue;
         }
 
         .medio-bloque{
@@ -22,10 +23,12 @@
 
         .inline{
             display: inline;
+                background-color: lightgreen;
         }
 
         .inline-block{
             display: inline-block;
+            background-color: lightcoral;
         }
 
         .oculto{
@@ -37,27 +40,42 @@
 
         .flex{
             display: flex;
+            /*flex-direction:column;*/
+            /*flex-wrap: wrap;*/
+            background-color: lightyellow;
         }
+
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            /*grid-template-columns: repeat(3, 1fr);*/
+            background-color: lightgray;
+        }
+
     </style>
 </head>
 <body>
     
     <!--Display block-->
+    <h1>Display block</h1>
     <span class="caja block">Texto en bloque</span>
     <span class="caja block">Texto en bloque</span>
     <span class="caja block medio-bloque">Texto en bloque</span>
 
     <!--Display none y hidden-->
+    <h1>Display none y visibility hidden</h1>
     <span class="oculto">Texto none</span>
     <span class="invisible">Texto invisible</span>
     <br>
 
     <!--Display inline-->
+    <h1>Display inline</h1>
     <span class="caja inline">Texto inline</span>
     <span class="caja inline medio-bloque">Texto inline</span>
     <span class="caja inline-block medio-bloque">Texto inline-block</span>
 
     <!--Display flex-->
+    <h1>Display flex</h1>
     <div class="flex">
         <span class="caja">Texto flex</span>
         <span class="caja">Texto flex</span>
@@ -70,7 +88,16 @@
     </div>
 
     <!--Display grid-->
-
+    <h1>Display grid</h1>
+    <div class="grid">
+        <div class="caja">Texto grid</div>
+        <div class="caja">Texto grid</div>
+        <div class="caja">Texto grid</div>
+        <div class="caja">Texto grid</div>
+        <div class="caja">Texto grid</div>
+        <div class="caja">Texto grid</div>
+        <div class="caja">Texto grid</div>
+    </div>
 
 </body>
 </html>
